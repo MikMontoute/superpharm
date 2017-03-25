@@ -79,7 +79,7 @@ div.required .control-label:before {
 }
 /* top */
 #top {
-	background-color: #EEEEEE;
+	background-color: #0155a4;
 	border-bottom: 1px solid #e2e2e2;
 	padding: 4px 0px 3px 0;
 	margin: 0 0 20px 0;
@@ -87,6 +87,7 @@ div.required .control-label:before {
 }
 #top .container {
 	padding: 0 20px;
+
 }
 #top #form-currency .currency-select,
 #top #form-language .language-select {
@@ -101,7 +102,8 @@ div.required .control-label:before {
 	background-repeat: repeat-x;
 }
 #top .btn-link, #top-links li, #top-links a {
-	color: #888;
+	color: #fff;
+	background-color: #0155a4;
 	text-shadow: 0 1px 0 #FFF;
 	text-decoration: none;
 }
@@ -192,9 +194,7 @@ div.required .control-label:before {
 }
 /* menu */
 #menu {
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
+	background-color: #0155a4;
 	border-color: #1f90bb #1f90bb #145e7a;
 	min-height: 40px;
 }
@@ -227,7 +227,7 @@ div.required .control-label:before {
 	font-size: 12px;
 }
 #menu .dropdown-inner li a:hover {
-	color: #FFFFFF;
+	color: #fff;
 }
 #menu .see-all {
 	display: block;
@@ -242,9 +242,7 @@ div.required .control-label:before {
 #menu .see-all:hover, #menu .see-all:focus {
 	text-decoration: none;
 	color: #ffffff;
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
+	background-color: #0155a4;
 }
 #menu #category {
 	float: left;
@@ -258,17 +256,16 @@ div.required .control-label:before {
 #menu .btn-navbar {
 	font-size: 15px;
 	font-stretch: expanded;
+	background-color: #0155a4;
 	color: #FFF;
 	padding: 2px 18px;
 	float: right;
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
 	border-color: #1f90bb #1f90bb #145e7a;
 }
 #menu .btn-navbar:hover, #menu .btn-navbar:focus, #menu .btn-navbar:active, #menu .btn-navbar.disabled, #menu .btn-navbar[disabled] {
 	color: #ffffff;
-	background-color: #229ac8;
+	background-color: #0155a4;
+
 }
 @media (min-width: 768px) {
 	#menu .dropdown:hover .dropdown-menu {

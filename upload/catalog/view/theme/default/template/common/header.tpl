@@ -80,6 +80,7 @@
             <?php } ?>
           </ul>
         </li>
+        <li><a href="chatsystem/index.php" id="" title="doctor connect"><i class="fa fa-weixin"></i> <span class="hidden-xs hidden-sm hidden-md">Doctor Connect</span></a></li>        
         <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
         <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
         <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
@@ -99,30 +100,26 @@
           <?php } ?>
         </div>
       </div>
-      <div class="col-sm-5"><?php echo $search; ?>
+      <div class="col-sm-5"  ><?php echo $search; ?>
       </div>
       <div class="col-sm-3"><?php echo $cart; ?></div>
     </div>
-  </div>
-  <form method="get" action="chatsystem/index.php">
-    <button type="submit">Doctor Connect</button>
-</form>
 </header>
 <?php if ($categories) { ?>
-<div class="container">
+<div class="container" >
   <nav id="menu" class="navbar">
-    <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    <div style = "background-color: #0155a4" class="navbar-header"><span style = "background-color: #0155a4" id="category" class="visible-xs"><?php echo $text_category; ?></span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" ><i class="fa fa-bars"></i></button>
     </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <div style = "background-color: #0155a4" class="collapse navbar-collapse navbar-ex1-collapse" style = "background-color: #0155a4">
       <ul class="nav navbar-nav">
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
         <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-          <div class="dropdown-menu">
-            <div class="dropdown-inner">
+          <div class="dropdown-menu" >
+            <div class="dropdown-inner" >
               <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-              <ul class="list-unstyled">
+              <ul class="list-unstyled" >
                 <?php foreach ($children as $child) { ?>
                 <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
                 <?php } ?>

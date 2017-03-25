@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2017 at 08:29 PM
+-- Generation Time: Mar 25, 2017 at 05:27 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -409,7 +409,6 @@ INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`,
 (27, '', 20, 0, 0, 2, 1, '2009-01-31 01:55:34', '2017-03-20 15:22:15'),
 (20, 'catalog/demo/compaq_presario.jpg', 0, 1, 1, 1, 1, '2009-01-05 21:49:43', '2017-03-11 10:16:06'),
 (18, 'catalog/demo/hp_2.jpg', 0, 1, 0, 2, 1, '2009-01-05 21:49:15', '2017-03-11 10:15:38'),
-(17, '', 0, 1, 1, 4, 1, '2009-01-03 21:08:57', '2011-05-30 12:15:11'),
 (26, '', 20, 0, 0, 1, 1, '2009-01-31 01:55:14', '2017-03-20 15:22:07'),
 (33, '', 0, 1, 1, 6, 1, '2009-02-03 14:17:55', '2017-03-11 10:14:54'),
 (34, 'catalog/demo/ipod_touch_4.jpg', 0, 1, 4, 7, 1, '2009-02-03 14:18:11', '2017-03-11 10:16:39'),
@@ -442,7 +441,6 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (33, 1, 'HealthCare', '', 'Cameras', '', ''),
 (27, 1, 'Food', '', 'Food', '', ''),
 (26, 1, 'Drinks', '', 'Drinks', '', ''),
-(17, 1, 'Software', '', 'Software', '', ''),
 (25, 1, 'BabyCare', '', 'Components', '', ''),
 (34, 1, 'Lab Testing', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'MP3 Players', '', ''),
 (18, 1, 'Cosmetics &amp; Fragrances', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'Laptops &amp; Notebooks', '', ''),
@@ -492,7 +490,6 @@ INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 (45, 45, 1),
 (46, 18, 0),
 (46, 46, 1),
-(17, 17, 0),
 (33, 33, 0),
 (34, 34, 0),
 (57, 57, 0);
@@ -543,7 +540,6 @@ CREATE TABLE `oc_category_to_store` (
 --
 
 INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
-(17, 0),
 (18, 0),
 (20, 0),
 (25, 0),
@@ -929,9 +925,10 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.80940002, 1, '2017-03-20 18:20:19'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-20 18:44:11'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.93030000, 1, '2017-03-20 18:20:19');
+(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.11294841, 1, '2017-03-25 11:09:00'),
+(2, 'TT Dollars', 'TTD', '$', '', '2', 1.00000000, 1, '2017-03-25 11:00:48'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.12984900, 1, '2017-03-25 11:08:30'),
+(4, 'US Dollars', 'US$', '$', '', '2', 0.14816500, 1, '2017-03-25 11:07:20');
 
 -- --------------------------------------------------------
 
@@ -1572,10 +1569,9 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (69, 10, 'affiliate', 'column_right', 1),
 (102, 6, 'carousel.29', 'content_bottom', 0),
 (104, 3, 'category', 'column_left', 1),
-(100, 1, 'carousel.29', 'content_top', 2),
-(99, 1, 'featured.28', 'content_top', 1),
-(98, 1, 'slideshow.27', 'content_top', 0),
-(97, 1, 'category', 'column_left', 0),
+(107, 1, 'carousel.29', 'content_top', 2),
+(106, 1, 'featured.28', 'content_top', 1),
+(105, 1, 'slideshow.27', 'content_top', 0),
 (103, 6, 'account', 'column_right', 1);
 
 -- --------------------------------------------------------
@@ -1600,7 +1596,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (62, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
 (63, 3, 0, 'product/category'),
-(60, 1, 0, 'common/home'),
+(64, 1, 0, 'common/home'),
 (20, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
 (23, 7, 0, 'checkout/%'),
@@ -2285,7 +2281,7 @@ CREATE TABLE `oc_product` (
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
 (54, 'Food 1', '', '', '', '', '', '', '', 10, 6, 'catalog/826a36a26bc9c3c0ac8cd897bd389e0a.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:13:50', '0000-00-00 00:00:00'),
-(55, 'Cosmetics 1', '', '', '', '', '', '', '', 15, 6, 'catalog/96961-1.jpg', 0, 1, '42.5000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 20, 1, 1, 0, '2017-03-11 11:15:59', '2017-03-11 11:18:45'),
+(55, 'Cosmetics 1', '', '', '', '', '', '', '', 15, 6, 'catalog/96961-1.jpg', 0, 1, '42.5000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:15:59', '2017-03-25 11:23:27'),
 (56, 'BabyCare 1', '', '', '', '', '', '', '', 200, 6, 'catalog/c26-B002YD8DNW-1-l.jpg', 0, 1, '79.2500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:17:19', '2017-03-11 11:22:02'),
 (57, 'Pet 1', '', '', '', '', '', '', '', 30, 6, 'catalog/image.jpg', 0, 1, '61.4500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:18:28', '0000-00-00 00:00:00'),
 (50, 'Health 1', '', '', '', '', '', '', '', 100, 6, 'catalog/images.jpg', 0, 1, '166.9900', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 10:57:10', '2017-03-11 11:02:17'),
@@ -3120,7 +3116,6 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (857, 'category_id=45', 'windows'),
 (846, 'category_id=25', 'component'),
 (851, 'category_id=57', 'tablet'),
-(786, 'category_id=17', 'software'),
 (845, 'category_id=33', 'camera'),
 (828, 'manufacturer_id=9', 'canon'),
 (829, 'manufacturer_id=5', 'htc'),
@@ -8450,12 +8445,12 @@ ALTER TABLE `oc_banner_image`
 -- AUTO_INCREMENT for table `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_category`
 --
 ALTER TABLE `oc_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 --
 -- AUTO_INCREMENT for table `oc_country`
 --
@@ -8480,7 +8475,7 @@ ALTER TABLE `oc_coupon_product`
 -- AUTO_INCREMENT for table `oc_currency`
 --
 ALTER TABLE `oc_currency`
-  MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `oc_customer`
 --
@@ -8585,12 +8580,12 @@ ALTER TABLE `oc_layout`
 -- AUTO_INCREMENT for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 --
 -- AUTO_INCREMENT for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 --
 -- AUTO_INCREMENT for table `oc_length_class`
 --
@@ -8805,7 +8800,7 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=858;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=859;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --
