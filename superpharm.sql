@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2017 at 05:27 PM
--- Server version: 10.1.13-MariaDB
--- PHP Version: 7.0.8
+-- Generation Time: Mar 27, 2017 at 12:26 AM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -410,8 +410,8 @@ INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`,
 (20, 'catalog/demo/compaq_presario.jpg', 0, 1, 1, 1, 1, '2009-01-05 21:49:43', '2017-03-11 10:16:06'),
 (18, 'catalog/demo/hp_2.jpg', 0, 1, 0, 2, 1, '2009-01-05 21:49:15', '2017-03-11 10:15:38'),
 (26, '', 20, 0, 0, 1, 1, '2009-01-31 01:55:14', '2017-03-20 15:22:07'),
-(33, '', 0, 1, 1, 6, 1, '2009-02-03 14:17:55', '2017-03-11 10:14:54'),
-(34, 'catalog/demo/ipod_touch_4.jpg', 0, 1, 4, 7, 1, '2009-02-03 14:18:11', '2017-03-11 10:16:39'),
+(33, '', 0, 1, 1, 6, 1, '2009-02-03 14:17:55', '2017-03-26 18:14:43'),
+(34, '', 0, 1, 4, 7, 1, '2009-02-03 14:18:11', '2017-03-26 17:33:53'),
 (45, '', 18, 0, 0, 0, 1, '2010-09-24 18:29:16', '2017-03-20 15:23:17'),
 (46, '', 18, 0, 0, 0, 1, '2010-09-24 18:29:31', '2017-03-20 15:22:56'),
 (57, '', 0, 1, 1, 3, 1, '2011-04-26 08:53:16', '2017-03-11 10:16:54');
@@ -438,11 +438,11 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(33, 1, 'HealthCare', '', 'Cameras', '', ''),
 (27, 1, 'Food', '', 'Food', '', ''),
 (26, 1, 'Drinks', '', 'Drinks', '', ''),
 (25, 1, 'BabyCare', '', 'Components', '', ''),
-(34, 1, 'Lab Testing', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'MP3 Players', '', ''),
+(34, 1, 'Stationaries', '', 'Stationaries', '', ''),
+(33, 1, 'HealthCare', '', 'Health Care', '', ''),
 (18, 1, 'Cosmetics &amp; Fragrances', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'Laptops &amp; Notebooks', '', ''),
 (45, 1, 'Fragrances', '', 'Fragrances', '', ''),
 (46, 1, 'Cosmetics', '', 'Cosmetics', '', ''),
@@ -925,10 +925,8 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.11294841, 1, '2017-03-25 11:09:00'),
-(2, 'TT Dollars', 'TTD', '$', '', '2', 1.00000000, 1, '2017-03-25 11:00:48'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.12984900, 1, '2017-03-25 11:08:30'),
-(4, 'US Dollars', 'US$', '$', '', '2', 0.14816500, 1, '2017-03-25 11:07:20');
+(2, 'TT Dollars', 'TTD', '$', '', '2', 6.74930000, 1, '2017-03-26 17:28:53'),
+(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-26 23:24:55');
 
 -- --------------------------------------------------------
 
@@ -2280,14 +2278,18 @@ CREATE TABLE `oc_product` (
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(54, 'Food 1', '', '', '', '', '', '', '', 10, 6, 'catalog/826a36a26bc9c3c0ac8cd897bd389e0a.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:13:50', '0000-00-00 00:00:00'),
-(55, 'Cosmetics 1', '', '', '', '', '', '', '', 15, 6, 'catalog/96961-1.jpg', 0, 1, '42.5000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:15:59', '2017-03-25 11:23:27'),
-(56, 'BabyCare 1', '', '', '', '', '', '', '', 200, 6, 'catalog/c26-B002YD8DNW-1-l.jpg', 0, 1, '79.2500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:17:19', '2017-03-11 11:22:02'),
-(57, 'Pet 1', '', '', '', '', '', '', '', 30, 6, 'catalog/image.jpg', 0, 1, '61.4500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:18:28', '0000-00-00 00:00:00'),
-(50, 'Health 1', '', '', '', '', '', '', '', 100, 6, 'catalog/images.jpg', 0, 1, '166.9900', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 10:57:10', '2017-03-11 11:02:17'),
-(51, 'Fragrance 1', '', '', '', '', '', '', '', 20, 6, 'catalog/16508365_10154943049861758_2395692699913067324_n.jpg', 0, 1, '600.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:02:00', '2017-03-11 11:02:30'),
-(52, 'Drinks 1', '', '', '', '', '', '', '', 100, 6, 'catalog/366cec73333a6fded4f35eb86b73ff13.jpg', 0, 1, '12.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:11:54', '0000-00-00 00:00:00'),
-(53, 'Stationary 1', '', '', '', '', '', '', '', 30, 6, 'catalog/51U8A21HOSL.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:12:52', '2017-03-11 11:14:11');
+(54, 'Food 1', '', '', '', '', '', '', '', 10, 6, 'catalog/826a36a26bc9c3c0ac8cd897bd389e0a.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:13:50', '2017-03-26 18:23:45'),
+(55, 'Cosmetics 1', '', '', '', '', '', '', '', 15, 6, 'catalog/96961-1.jpg', 0, 1, '42.5000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:15:59', '2017-03-26 18:23:58'),
+(56, 'BabyCare 1', '', '', '', '', '', '', '', 200, 6, 'catalog/c26-B002YD8DNW-1-l.jpg', 0, 1, '79.2500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:17:19', '2017-03-26 18:23:34'),
+(57, 'Pet 1', '', '', '', '', '', '', '', 30, 6, 'catalog/image.jpg', 0, 1, '61.4500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:18:28', '2017-03-26 18:23:20'),
+(50, 'Health 1', '', '', '', '', '', '', '', 60, 6, 'catalog/images.jpg', 0, 1, '166.9900', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 10:57:10', '2017-03-26 18:22:01'),
+(51, 'Fragrance 1', '', '', '', '', '', '', '', 20, 6, 'catalog/16508365_10154943049861758_2395692699913067324_n.jpg', 0, 1, '600.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:02:00', '2017-03-26 18:22:53'),
+(52, 'Drinks 1', '', '', '', '', '', '', '', 100, 6, 'catalog/366cec73333a6fded4f35eb86b73ff13.jpg', 0, 1, '12.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:11:54', '2017-03-26 18:24:13'),
+(53, 'Stationary 1', '', '', '', '', '', '', '', 30, 6, 'catalog/51U8A21HOSL.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:12:52', '2017-03-26 18:23:07'),
+(58, 'Health 2', '', '', '', '', '', '', '', 30, 6, 'catalog/7477_160cc_EN_large.jpg', 0, 1, '84.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 17:54:49', '2017-03-26 18:15:52'),
+(59, 'Health 3', '', '', '', '', '', '', '', 20, 6, 'catalog/787002_EN_large.jpg', 0, 1, '115.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:00:31', '2017-03-26 18:01:14'),
+(60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 18:22:00'),
+(61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 18:18:15');
 
 -- --------------------------------------------------------
 
@@ -2326,14 +2328,18 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(50, 1, 'Centrum', '', '', 'Centrum', '', 'health'),
 (51, 1, 'Calvin Klein', '&lt;p&gt;Calvin Klein&lt;br&gt;&lt;/p&gt;', '', 'Calvin Klein', '', ''),
 (52, 1, 'Snapple', '', '', 'Snapple', '', ''),
 (53, 1, 'Color Pencils', '&lt;p&gt;24 Faber Castle Coloring pencils&lt;/p&gt;', '', 'Color Pencils', '', ''),
 (54, 1, 'Presto Salad', '', '', 'Presto Salad', '', ''),
 (55, 1, 'Revlon - Airbrush Effect', '', '', 'Revlon - Airbrush Effect', '', ''),
 (56, 1, 'Huggies - Little Snuggler', '&lt;p&gt;Huggies - Little Snuggler pampers for babies 1+&lt;br&gt;&lt;/p&gt;', '', 'Huggies - Little Snuggler', '', ''),
-(57, 1, 'Heart Guard', '&lt;p&gt;Heart Guard for dogs healthy heart&lt;br&gt;&lt;/p&gt;', '', 'Heart Guard', '', '');
+(57, 1, 'Heart Guard', '&lt;p&gt;Heart Guard for dogs healthy heart&lt;br&gt;&lt;/p&gt;', '', 'Heart Guard', '', ''),
+(58, 1, 'Vitamin B12 2,500 Mcg (Methylcobalamin) Sublingual Tablets', '&lt;h1 style=&quot;font-family: &amp;quot;Source Sans Pro&amp;quot;, sans-serif; font-weight: 700; margin-bottom: 0.5em; line-height: 1.4; color: rgb(119, 120, 123); font-size: 1.28571em; text-transform: capitalize;&quot;&gt;Jamieson Vitamin B12 2,500 mcg Fast Dissolving Sublingual Tablets is formulated using the methylcobalamin form of B12 to help in the production of red blood cells and metabolism of carbohydrates, fats and proteins for enhanced energy production.&lt;br&gt;&lt;/h1&gt;', '', 'Vitamin B12', '', ''),
+(59, 1, 'Jamieson Omega 3-6-9', '&lt;h1 itemprop=&quot;name&quot; style=&quot;margin-bottom: 0.5em; line-height: 1.4;&quot;&gt;&lt;p style=&quot;margin-bottom: 15px;&quot;&gt;Jamieson Omega 3-6-9 is a complete source of omega-3, 6 and 9 essential fatty acids. Derived from fresh, pure cold-pressed oils of organic flax, borage and sustainably sourced fish, it helps to support heart health and &amp;nbsp;maintain healthy cognitive function.&lt;/p&gt;&lt;/h1&gt;&lt;h3 style=&quot;margin: 0em 0px 0.5em; line-height: 1.4;&quot;&gt;&lt;br&gt;&lt;/h3&gt;', '', 'Jamieson Omega 3-6-9', '', ''),
+(60, 1, 'GNC Burn 60™ ', '&lt;p&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 14px;&quot;&gt;GNC Burn 60™ is a clinically proven thermogenic formula that helps to enhance metabolism, burn calories and boost energy levels. With its powerful ingredients, Burn 60 enhances cellular metabolic activity. For best results, use the healthy diet and exercise program included with Burn 60.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'GNC Burn 60', '', ''),
+(61, 1, 'Vyzetra Ultra’s', '&lt;p&gt;&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;Droid Sans&amp;quot;, Helvetica, Arial, Lucida, sans-serif; font-size: 14px;&quot;&gt;Vyzetra Ultra’s formulation is delivered exclusively in a capsule that retains the structural integrity of the original ingredient. Vyzetra Ultracontains a blend of additional ingredients integral in support of a healthy 21st century lifestyle. Co Q10 supports subcellular energy metabolism and is needed by an aging population. Alpha lipoic acid contains the biologically active R-Lipoic Acid that is naturally synthesized by humans as a cofactor for several mitochondrial enzymatic proteins. Choline is an essential nutrient needed by humans to support cell signaling, nerve impulse transmission, and fatty acid metabolism. L-Glutathione is the body’s premier antioxidant and is a product by its cells to prevent oxidative stress and promote cell function. Inositol is an important molecule in natural signal transduction and is required by fatty acid precursor molecules.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Vyzetra Ultra’s', '', ''),
+(50, 1, 'Centrum', '&lt;ul style=&quot;margin: 13px 0px; padding: 0px 0px 0px 4px; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; height: auto; color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;li style=&quot;margin: 0px 0px 13px 13px; padding: 0px; list-style: disc outside none; background: none; border: 0px;&quot;&gt;Specially formulated with an active combination of 23 vitamins, minerals and herbs. Contains ginseng to support physical endurance and higher levels of B vitamins to unlock energy from food The world’s no.1 multivitamin&lt;span style=&quot;background-color: initial; vertical-align: top; font-size: 8.52px; font-family: arial; position: relative; top: -3px;&quot;&gt;*&amp;nbsp;&lt;/span&gt;Backed by 30 years of nutritional expertise and proven science&lt;/li&gt;&lt;/ul&gt;', '', 'Centrum', '', 'health');
 
 -- --------------------------------------------------------
 
@@ -2485,6 +2491,24 @@ CREATE TABLE `oc_product_to_category` (
   `category_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `oc_product_to_category`
+--
+
+INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
+(50, 33),
+(51, 45),
+(52, 26),
+(53, 34),
+(54, 27),
+(55, 46),
+(56, 25),
+(57, 57),
+(58, 33),
+(59, 33),
+(60, 33),
+(61, 33);
+
 -- --------------------------------------------------------
 
 --
@@ -2522,7 +2546,11 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (54, 0, 0),
 (55, 0, 0),
 (56, 0, 0),
-(57, 0, 0);
+(57, 0, 0),
+(58, 0, 0),
+(59, 0, 0),
+(60, 0, 0),
+(61, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2548,7 +2576,11 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 (54, 0),
 (55, 0),
 (56, 0),
-(57, 0);
+(57, 0),
+(58, 0),
+(59, 0),
+(60, 0),
+(61, 0);
 
 -- --------------------------------------------------------
 
@@ -3110,13 +3142,13 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (855, 'category_id=27', 'mac'),
 (730, 'manufacturer_id=8', 'apple'),
 (772, 'information_id=4', 'about_us'),
-(850, 'category_id=34', 'mp3-players'),
+(860, 'category_id=34', 'mp3-players'),
 (848, 'category_id=18', 'laptop-notebook'),
 (856, 'category_id=46', 'macs'),
 (857, 'category_id=45', 'windows'),
 (846, 'category_id=25', 'component'),
 (851, 'category_id=57', 'tablet'),
-(845, 'category_id=33', 'camera'),
+(862, 'category_id=33', 'healthcare'),
 (828, 'manufacturer_id=9', 'canon'),
 (829, 'manufacturer_id=5', 'htc'),
 (830, 'manufacturer_id=7', 'hewlett-packard'),
@@ -8685,7 +8717,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
 --
@@ -8800,7 +8832,7 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=859;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=863;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --
