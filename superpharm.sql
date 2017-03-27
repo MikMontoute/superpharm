@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2017 at 04:53 AM
+-- Generation Time: Mar 27, 2017 at 05:11 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -407,8 +407,8 @@ CREATE TABLE `oc_category` (
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
 (25, '', 0, 1, 1, 3, 1, '2009-01-31 01:04:25', '2017-03-26 20:58:47'),
 (27, '', 20, 0, 0, 2, 1, '2009-01-31 01:55:34', '2017-03-20 15:22:15'),
-(20, 'catalog/demo/compaq_presario.jpg', 0, 1, 1, 1, 1, '2009-01-05 21:49:43', '2017-03-11 10:16:06'),
-(18, 'catalog/demo/hp_2.jpg', 0, 1, 0, 2, 1, '2009-01-05 21:49:15', '2017-03-11 10:15:38'),
+(20, 'catalog/food_Drink.jpg', 0, 1, 1, 1, 1, '2009-01-05 21:49:43', '2017-03-26 23:08:27'),
+(18, 'catalog/01022014_shutterstock_144792463-600.jpg', 0, 1, 0, 2, 1, '2009-01-05 21:49:15', '2017-03-26 23:07:17'),
 (26, '', 20, 0, 0, 1, 1, '2009-01-31 01:55:14', '2017-03-20 15:22:07'),
 (33, '', 0, 1, 1, 6, 1, '2009-02-03 14:17:55', '2017-03-26 18:14:43'),
 (34, '', 0, 1, 4, 7, 1, '2009-02-03 14:18:11', '2017-03-26 17:33:53'),
@@ -444,11 +444,11 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (25, 1, 'BabyCare', '', 'Components', '', ''),
 (34, 1, 'Stationaries', '', 'Stationaries', '', ''),
 (33, 1, 'HealthCare', '', 'Health Care', '', ''),
-(18, 1, 'Cosmetics &amp; Fragrances', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'Laptops &amp; Notebooks', '', ''),
+(18, 1, 'Cosmetics &amp; Fragrances', '', 'Cosmetics &amp; Fragrances', '', ''),
 (45, 1, 'Fragrances', '', 'Fragrances', '', ''),
 (46, 1, 'Cosmetics', '', 'Cosmetics', '', ''),
 (57, 1, 'Pet Supplies', '', 'Tablets', '', ''),
-(20, 1, 'Food  &amp; Drinks', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Desktops', 'Example of category description', ''),
+(20, 1, 'Food  &amp; Drinks', '', 'Food  &amp; Drinks', '', ''),
 (61, 1, 'sfdsfsdg', '', 'rssrgfsdf', '', '');
 
 -- --------------------------------------------------------
@@ -483,15 +483,15 @@ CREATE TABLE `oc_category_path` (
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 (25, 25, 0),
 (20, 20, 0),
-(27, 20, 0),
 (27, 27, 1),
-(26, 20, 0),
+(27, 20, 0),
 (26, 26, 1),
+(26, 20, 0),
 (18, 18, 0),
-(45, 18, 0),
 (45, 45, 1),
-(46, 18, 0),
+(45, 18, 0),
 (46, 46, 1),
+(46, 18, 0),
 (33, 33, 0),
 (34, 34, 0),
 (57, 57, 0),
@@ -931,7 +931,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (2, 'TT Dollars', 'TTD', '$', '', '2', 6.74930000, 1, '2017-03-26 17:28:53'),
-(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-27 03:30:30');
+(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-27 05:06:13');
 
 -- --------------------------------------------------------
 
@@ -3202,13 +3202,13 @@ CREATE TABLE `oc_url_alias` (
 --
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
-(849, 'category_id=20', 'desktops'),
+(866, 'category_id=20', 'Food  &amp; Drinks'),
 (854, 'category_id=26', 'pc'),
 (855, 'category_id=27', 'mac'),
 (730, 'manufacturer_id=8', 'apple'),
 (772, 'information_id=4', 'about_us'),
 (860, 'category_id=34', 'mp3-players'),
-(848, 'category_id=18', 'laptop-notebook'),
+(865, 'category_id=18', 'Cosmetics &amp; Fragrances'),
 (856, 'category_id=46', 'macs'),
 (857, 'category_id=45', 'windows'),
 (864, 'category_id=25', 'component'),
@@ -8897,7 +8897,7 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=865;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=867;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --
