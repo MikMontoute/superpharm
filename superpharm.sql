@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2017 at 12:26 AM
+-- Generation Time: Mar 27, 2017 at 03:45 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -926,7 +926,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (2, 'TT Dollars', 'TTD', '$', '', '2', 6.74930000, 1, '2017-03-26 17:28:53'),
-(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-26 23:24:55');
+(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-27 03:08:55');
 
 -- --------------------------------------------------------
 
@@ -2288,8 +2288,12 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (53, 'Stationary 1', '', '', '', '', '', '', '', 30, 6, 'catalog/51U8A21HOSL.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:12:52', '2017-03-26 18:23:07'),
 (58, 'Health 2', '', '', '', '', '', '', '', 30, 6, 'catalog/7477_160cc_EN_large.jpg', 0, 1, '84.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 17:54:49', '2017-03-26 18:15:52'),
 (59, 'Health 3', '', '', '', '', '', '', '', 20, 6, 'catalog/787002_EN_large.jpg', 0, 1, '115.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:00:31', '2017-03-26 18:01:14'),
-(60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 18:22:00'),
-(61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 18:18:15');
+(60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 21:19:22'),
+(61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 21:21:03'),
+(62, 'Stationary 2', '', '', '', '', '', '', '', 70, 6, 'catalog/0dick_1614.jpg', 0, 1, '48.4000', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:26:00', '2017-03-26 21:26:33'),
+(63, 'Stationary 3', '', '', '', '', '', '', '', 30, 6, 'catalog/0.jpg', 0, 1, '96.0000', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:28:36', '2017-03-26 21:29:04'),
+(64, 'Stationary 4', '', '', '', '', '', '', '', 70, 6, 'catalog/17002.jpg', 0, 1, '13.4300', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:31:57', '0000-00-00 00:00:00'),
+(65, 'Stationary 5', '', '', '', '', '', '', '', 15, 6, 'catalog/0dick_0397.jpg', 0, 1, '41.3600', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:35:24', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -2339,7 +2343,11 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (59, 1, 'Jamieson Omega 3-6-9', '&lt;h1 itemprop=&quot;name&quot; style=&quot;margin-bottom: 0.5em; line-height: 1.4;&quot;&gt;&lt;p style=&quot;margin-bottom: 15px;&quot;&gt;Jamieson Omega 3-6-9 is a complete source of omega-3, 6 and 9 essential fatty acids. Derived from fresh, pure cold-pressed oils of organic flax, borage and sustainably sourced fish, it helps to support heart health and &amp;nbsp;maintain healthy cognitive function.&lt;/p&gt;&lt;/h1&gt;&lt;h3 style=&quot;margin: 0em 0px 0.5em; line-height: 1.4;&quot;&gt;&lt;br&gt;&lt;/h3&gt;', '', 'Jamieson Omega 3-6-9', '', ''),
 (60, 1, 'GNC Burn 60™ ', '&lt;p&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 14px;&quot;&gt;GNC Burn 60™ is a clinically proven thermogenic formula that helps to enhance metabolism, burn calories and boost energy levels. With its powerful ingredients, Burn 60 enhances cellular metabolic activity. For best results, use the healthy diet and exercise program included with Burn 60.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'GNC Burn 60', '', ''),
 (61, 1, 'Vyzetra Ultra’s', '&lt;p&gt;&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;Droid Sans&amp;quot;, Helvetica, Arial, Lucida, sans-serif; font-size: 14px;&quot;&gt;Vyzetra Ultra’s formulation is delivered exclusively in a capsule that retains the structural integrity of the original ingredient. Vyzetra Ultracontains a blend of additional ingredients integral in support of a healthy 21st century lifestyle. Co Q10 supports subcellular energy metabolism and is needed by an aging population. Alpha lipoic acid contains the biologically active R-Lipoic Acid that is naturally synthesized by humans as a cofactor for several mitochondrial enzymatic proteins. Choline is an essential nutrient needed by humans to support cell signaling, nerve impulse transmission, and fatty acid metabolism. L-Glutathione is the body’s premier antioxidant and is a product by its cells to prevent oxidative stress and promote cell function. Inositol is an important molecule in natural signal transduction and is required by fatty acid precursor molecules.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Vyzetra Ultra’s', '', ''),
-(50, 1, 'Centrum', '&lt;ul style=&quot;margin: 13px 0px; padding: 0px 0px 0px 4px; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; height: auto; color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;li style=&quot;margin: 0px 0px 13px 13px; padding: 0px; list-style: disc outside none; background: none; border: 0px;&quot;&gt;Specially formulated with an active combination of 23 vitamins, minerals and herbs. Contains ginseng to support physical endurance and higher levels of B vitamins to unlock energy from food The world’s no.1 multivitamin&lt;span style=&quot;background-color: initial; vertical-align: top; font-size: 8.52px; font-family: arial; position: relative; top: -3px;&quot;&gt;*&amp;nbsp;&lt;/span&gt;Backed by 30 years of nutritional expertise and proven science&lt;/li&gt;&lt;/ul&gt;', '', 'Centrum', '', 'health');
+(50, 1, 'Centrum', '&lt;ul style=&quot;margin: 13px 0px; padding: 0px 0px 0px 4px; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; height: auto; color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;li style=&quot;margin: 0px 0px 13px 13px; padding: 0px; list-style: disc outside none; background: none; border: 0px;&quot;&gt;Specially formulated with an active combination of 23 vitamins, minerals and herbs. Contains ginseng to support physical endurance and higher levels of B vitamins to unlock energy from food The world’s no.1 multivitamin&lt;span style=&quot;background-color: initial; vertical-align: top; font-size: 8.52px; font-family: arial; position: relative; top: -3px;&quot;&gt;*&amp;nbsp;&lt;/span&gt;Backed by 30 years of nutritional expertise and proven science&lt;/li&gt;&lt;/ul&gt;', '', 'Centrum', '', 'health'),
+(62, 1, 'Note Book', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl03_BrandLabel&quot; class=&quot;orange&quot;&gt;Mead Zwipes&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl03_DescriptionLabel&quot; class=&quot;orange&quot;&gt;College Ruled Perf. w/ marker, clip, dividers and flap Red/ Green/ Blue - 9 1/2&quot; x 6&quot; - 90lvs&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Note Book', '', ''),
+(63, 1, 'Scientific Calculator ', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl08_BrandLabel&quot; class=&quot;orange&quot;&gt;Canon&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl08_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Scientific Calculator 10+2 digits with 38 built-in formulas&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Scientific Calculator ', '', ''),
+(64, 1, 'Command Hook', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl04_BrandLabel&quot; class=&quot;orange&quot;&gt;3M&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl04_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Small Command Hook - 2/pk&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Command Hook', '', ''),
+(65, 1, 'Crayola Oil Pastels', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl00_BrandLabel&quot; class=&quot;orange&quot;&gt;Crayola&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl00_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Oil Pastels - hexagonal in lift lid box - 28''s&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Crayola Oil Pastels', '', '');
 
 -- --------------------------------------------------------
 
@@ -2507,7 +2515,11 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (58, 33),
 (59, 33),
 (60, 33),
-(61, 33);
+(61, 33),
+(62, 34),
+(63, 34),
+(64, 34),
+(65, 34);
 
 -- --------------------------------------------------------
 
@@ -2550,7 +2562,11 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (58, 0, 0),
 (59, 0, 0),
 (60, 0, 0),
-(61, 0, 0);
+(61, 0, 0),
+(62, 0, 0),
+(63, 0, 0),
+(64, 0, 0),
+(65, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2580,7 +2596,11 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 (58, 0),
 (59, 0),
 (60, 0),
-(61, 0);
+(61, 0),
+(62, 0),
+(63, 0),
+(64, 0),
+(65, 0);
 
 -- --------------------------------------------------------
 
@@ -8717,7 +8737,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
 --
