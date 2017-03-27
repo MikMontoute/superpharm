@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2017 at 03:52 PM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 5.6.24
+-- Generation Time: Mar 27, 2017 at 09:02 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 7.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -930,7 +930,7 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(2, 'TT Dollars', 'TTD', '$', '', '2', 1.00000000, 1, '2017-03-27 15:47:12'),
+(2, 'TT Dollars', 'TTD', '$', '', '2', 1.00000000, 1, '2017-03-27 20:12:49'),
 (4, 'US Dollars', 'USD', '$', '', '2', 0.14816350, 1, '2017-03-27 09:44:43');
 
 -- --------------------------------------------------------
@@ -2290,20 +2290,20 @@ CREATE TABLE `oc_product` (
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(54, 'Food 1', '', '', '', '', '', '', '', 10, 6, 'catalog/826a36a26bc9c3c0ac8cd897bd389e0a.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:13:50', '2017-03-26 18:23:45'),
-(55, 'Cosmetics 1', '', '', '', '', '', '', '', 15, 6, 'catalog/96961-1.jpg', 0, 1, '42.5000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:15:59', '2017-03-26 18:23:58'),
+(54, 'Food 1', '', '', '', '', '', '', '', 10, 6, 'catalog/826a36a26bc9c3c0ac8cd897bd389e0a.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:13:50', '2017-03-27 14:59:05'),
+(55, 'Cosmetics 1', '', '', '', '', '', '', '', 15, 6, 'catalog/96961-1.jpg', 0, 1, '42.5000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 2, '2017-03-11 11:15:59', '2017-03-27 14:58:13'),
 (56, 'BabyCare 1', '', '', '', '', '', '', '', 200, 6, 'catalog/c26-B002YD8DNW-1-l.jpg', 0, 1, '79.2500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:17:19', '2017-03-26 18:23:34'),
 (57, 'Pet 1', '', '', '', '', '', '', '', 30, 6, 'catalog/image.jpg', 0, 1, '61.4500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:18:28', '2017-03-26 18:23:20'),
 (50, 'Health 1', '', '', '', '', '', '', '', 60, 6, 'catalog/images.jpg', 0, 1, '166.9900', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 10:57:10', '2017-03-26 18:22:01'),
-(51, 'Fragrance 1', '', '', '', '', '', '', '', 20, 6, 'catalog/16508365_10154943049861758_2395692699913067324_n.jpg', 0, 1, '600.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:02:00', '2017-03-26 18:22:53'),
-(52, 'Drinks 1', '', '', '', '', '', '', '', 100, 6, 'catalog/366cec73333a6fded4f35eb86b73ff13.jpg', 0, 1, '12.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:11:54', '2017-03-26 18:24:13'),
+(51, 'Fragrance 1', '', '', '', '', '', '', '', 20, 6, 'catalog/16508365_10154943049861758_2395692699913067324_n.jpg', 0, 1, '600.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 2, '2017-03-11 11:02:00', '2017-03-27 14:56:01'),
+(52, 'Drinks 1', '', '', '', '', '', '', '', 100, 6, 'catalog/366cec73333a6fded4f35eb86b73ff13.jpg', 0, 1, '12.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:11:54', '2017-03-27 14:47:22'),
 (53, 'Stationary 1', '', '', '', '', '', '', '', 30, 6, 'catalog/51U8A21HOSL.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:12:52', '2017-03-26 18:23:07'),
 (58, 'Health 2', '', '', '', '', '', '', '', 30, 6, 'catalog/7477_160cc_EN_large.jpg', 0, 1, '84.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 17:54:49', '2017-03-26 18:15:52'),
 (59, 'Health 3', '', '', '', '', '', '', '', 20, 6, 'catalog/787002_EN_large.jpg', 0, 1, '115.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:00:31', '2017-03-26 18:01:14'),
 (60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 21:30:54'),
 (61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 21:30:36'),
 (62, 'BabyCare 2', '', '', '', '', '', '', '', 50, 6, 'catalog/baby_oil.jpg', 0, 1, '67.7200', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 20:33:56', '2017-03-26 21:28:37'),
-(63, 'BabyCare 3', '', '', '', '', '', '', '', 65, 6, 'catalog/baby_wipes.JPG', 0, 1, '16.0700', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 20:57:16', '2017-03-26 21:28:12'),
+(63, 'BabyCare 3', '', '', '', '', '', '', '', 65, 6, 'catalog/baby_wipes.JPG', 0, 1, '16.0700', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-26 20:57:16', '2017-03-26 21:28:12'),
 (64, 'BabyCare 4', '', '', '', '', '', '', '', 30, 6, 'catalog/vaseline.JPG', 0, 1, '28.2700', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:20:53', '2017-03-26 21:29:56'),
 (65, 'BabyCare 5', '', '', '', '', '', '', '', 50, 6, 'catalog/baby_shampoo.jpg', 0, 1, '33.3500', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:27:39', '2017-03-26 21:29:35'),
 (66, 'Stationary 2', '', '', '', '', '', '', '', 20, 6, 'catalog/0.jpg', 0, 1, '96.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:16:51', '0000-00-00 00:00:00'),
@@ -2313,7 +2313,30 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (70, 'Pet 2', '', '', '', '', '', '', '', 10, 6, 'catalog/1221026.jpg', 0, 1, '23.7500', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:31:28', '2017-03-26 22:31:54'),
 (71, 'Pet 3', '', '', '', '', '', '', '', 10, 6, 'catalog/5-Retractable-dog-leash-BS-425mk072411.jpg', 0, 1, '65.4800', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:33:16', '0000-00-00 00:00:00'),
 (72, 'Pet 4', '', '', '', '', '', '', '', 20, 6, 'catalog/1dentastix.jpg', 0, 1, '71.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-26 22:36:54', '0000-00-00 00:00:00'),
-(73, 'Pet 5', '', '', '', '', '', '', '', 20, 6, 'catalog/1IAM-Cat-Treats-.jpg', 0, 1, '68.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:39:42', '0000-00-00 00:00:00');
+(73, 'Pet 5', '', '', '', '', '', '', '', 20, 6, 'catalog/1IAM-Cat-Treats-.jpg', 0, 1, '68.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:39:42', '0000-00-00 00:00:00'),
+(74, 'Food 2', '', '', '', '', '', '', '', 15, 6, 'catalog/New Bitmap Image - Copy.jpg', 0, 1, '30.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 12:57:14', '2017-03-27 12:57:55'),
+(75, 'Food 3', '', '', '', '', '', '', '', 20, 6, 'catalog/New Bitmap Image - Copy (15).jpg', 0, 1, '15.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 12:59:10', '0000-00-00 00:00:00'),
+(76, 'Food 4', '', '', '', '', '', '', '', 20, 6, 'catalog/New Bitmap Image - Copy (14).jpg', 0, 1, '30.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:03:26', '0000-00-00 00:00:00'),
+(77, 'food 5', '', '', '', '', '', '', '', 15, 6, 'catalog/New Bitmap Image - Copy (4).jpg', 0, 1, '25.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:05:12', '0000-00-00 00:00:00'),
+(78, 'Food 6', '', '', '', '', '', '', '', 15, 6, 'catalog/New Bitmap Image - Copy (3).jpg', 0, 1, '30.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:05:51', '2017-03-27 13:06:23'),
+(79, 'Food 7', '', '', '', '', '', '', '', 15, 6, 'catalog/sub.jpg', 0, 1, '25.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:07:26', '2017-03-27 14:25:19'),
+(80, 'Cosmetics 2', '', '', '', '', '', '', '', 50, 6, 'catalog/blush.jpg', 0, 1, '39.4900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:13:58', '2017-03-27 13:41:57'),
+(81, 'Cosmetics 3', '', '', '', '', '', '', '', 50, 6, 'catalog/concealer.jpg', 0, 1, '39.4900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:15:35', '2017-03-27 13:42:11'),
+(82, 'Cosmetics 4', '', '', '', '', '', '', '', 100, 6, 'catalog/lip gloss.jpg', 0, 1, '29.4900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:17:19', '2017-03-27 13:42:23'),
+(83, 'Cosmetics 5', '', '', '', '', '', '', '', 100, 6, 'catalog/nail polish.jpg', 0, 1, '39.4900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:32:05', '0000-00-00 00:00:00'),
+(84, 'Cosmetics 6', '', '', '', '', '', '', '', 100, 6, 'catalog/shimmer eyeliner.jpg', 0, 1, '29.4900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:34:10', '0000-00-00 00:00:00'),
+(85, 'Cosmetics 7', '', '', '', '', '', '', '', 100, 6, 'catalog/eye shadow 22.jpg', 0, 1, '29.4900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:40:01', '0000-00-00 00:00:00'),
+(86, 'Cosmetics 8', '', '', '', '', '', '', '', 100, 6, 'catalog/lip stick 2.jpg', 0, 1, '29.4900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:41:19', '0000-00-00 00:00:00'),
+(87, 'Fragrance 2', '', '', '', '', '', '', '', 50, 6, 'catalog/2.jpg', 0, 1, '262.5400', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:44:21', '2017-03-27 14:28:18'),
+(88, 'Fragrance 3', '', '', '', '', '', '', '', 50, 6, 'catalog/3.jpg', 0, 1, '351.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:46:13', '2017-03-27 14:26:59'),
+(89, 'Fragrance 4', '', '', '', '', '', '', '', 50, 6, 'catalog/4.jpg', 0, 1, '682.5000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:47:20', '2017-03-27 14:29:25'),
+(90, 'Fragrance 5', '', '', '', '', '', '', '', 50, 6, 'catalog/5.jpg', 0, 1, '188.1800', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 13:49:09', '2017-03-27 14:30:08'),
+(91, 'Fragrance 6', '', '', '', '', '', '', '', 10, 6, 'catalog/6.jpg', 0, 1, '1228.5000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-27 13:50:31', '2017-03-27 14:56:28'),
+(92, 'Drinks 2', '', '', '', '', '', '', '', 10, 6, 'catalog/black label 2.jpg', 0, 1, '286.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-27 14:16:00', '2017-03-27 14:43:22'),
+(93, 'Drinks 3', '', '', '', '', '', '', '', 100, 6, 'catalog/Pinehill.jpg', 0, 1, '9.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 14:17:51', '0000-00-00 00:00:00'),
+(94, 'Drinks 4 ', '', '', '', '', '', '', '', 100, 6, 'catalog/orchard.jpg', 0, 1, '8.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 14:19:19', '0000-00-00 00:00:00'),
+(95, 'Drinks 6', '', '', '', '', '', '', '', 100, 6, 'catalog/carib.jpg', 0, 1, '13.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-27 14:20:30', '0000-00-00 00:00:00'),
+(96, 'Drinks 7', '', '', '', '', '', '', '', 50, 6, 'catalog/dimple.jpg', 0, 1, '410.9700', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-27 14:22:58', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -2352,11 +2375,9 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(51, 1, 'Calvin Klein', '&lt;p&gt;Calvin Klein&lt;br&gt;&lt;/p&gt;', '', 'Calvin Klein', '', ''),
-(52, 1, 'Snapple', '', '', 'Snapple', '', ''),
+(52, 1, 'Snapple', '&lt;p&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: arial, sans-serif; font-size: small;&quot;&gt;Made from the Best Stuff on Earth,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: bold; color: rgb(106, 106, 106); font-family: arial, sans-serif; font-size: small;&quot;&gt;Snapple&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: arial, sans-serif; font-size: small;&quot;&gt;&amp;nbsp;has been making delicious fruit drinks since 1972.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: arial, sans-serif; font-size: small;&quot;&gt;Peaches, lemons, and diet teas, oh my! With over 30 different flavors, find your favorite&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: bold; color: rgb(106, 106, 106); font-family: arial, sans-serif; font-size: small;&quot;&gt;Snapple&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: arial, sans-serif; font-size: small;&quot;&gt;&amp;nbsp;tea and juice drink flavors today!&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: arial, sans-serif; font-size: small;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Snapple', '', ''),
 (53, 1, 'Color Pencils', '&lt;p&gt;24 Faber Castle Coloring pencils&lt;/p&gt;', '', 'Color Pencils', '', ''),
-(54, 1, 'Presto Salad', '', '', 'Presto Salad', '', ''),
-(55, 1, 'Revlon - Airbrush Effect', '', '', 'Revlon - Airbrush Effect', '', ''),
+(54, 1, 'Presto Salad', '&lt;p&gt;Mouth watering and &amp;nbsp;delicious! Presto''s Salad is made form the freshest ingredients from across the country! Have a healthy meal with many different kinds of Dressings to choose from!&amp;nbsp;&lt;/p&gt;', '', 'Presto Salad', '', ''),
 (56, 1, 'Huggies - Little Snuggler', '&lt;p&gt;Huggies - Little Snuggler pampers for babies 1+&lt;br&gt;&lt;/p&gt;', '', 'Huggies - Little Snuggler', '', ''),
 (57, 1, 'Heart Guard', '&lt;p&gt;Heart Guard for dogs healthy heart&lt;br&gt;&lt;/p&gt;', '', 'Heart Guard', '', ''),
 (58, 1, 'Vitamin B12 2,500 Mcg (Methylcobalamin) Sublingual Tablets', '&lt;h1 style=&quot;font-family: &amp;quot;Source Sans Pro&amp;quot;, sans-serif; font-weight: 700; margin-bottom: 0.5em; line-height: 1.4; color: rgb(119, 120, 123); font-size: 1.28571em; text-transform: capitalize;&quot;&gt;Jamieson Vitamin B12 2,500 mcg Fast Dissolving Sublingual Tablets is formulated using the methylcobalamin form of B12 to help in the production of red blood cells and metabolism of carbohydrates, fats and proteins for enhanced energy production.&lt;br&gt;&lt;/h1&gt;', '', 'Vitamin B12', '', ''),
@@ -2375,7 +2396,32 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (70, 1, 'Friskies Cat food', '&lt;p&gt;Friskies Cat food - Mix Grill&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Cat food', '', ''),
 (71, 1, 'Dog Leash', '&lt;p&gt;Red and Black, Retractable dog leash&lt;/p&gt;', '', 'Dog Leash', '', ''),
 (72, 1, 'Dentastix', '&lt;p&gt;Dentastix are a safe way for clean teeth and gums for your pet dog&lt;/p&gt;', '', 'Dentastix', '', ''),
-(73, 1, 'IAMS cat treats', '&lt;p&gt;IAMS cat treats with chicken&lt;/p&gt;', '', 'IAMS cat food', '', '');
+(73, 1, 'IAMS cat treats', '&lt;p&gt;IAMS cat treats with chicken&lt;/p&gt;', '', 'IAMS cat food', '', ''),
+(74, 1, 'Chicken Caesar Wrap', '&lt;p class=&quot;MsoNormal&quot;&gt;&amp;nbsp;Wrap Skin, Romain\r\nLettuce, Grilled Chicken, Tomato, Caesar Dressing&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;', '', 'Chicken Caesar Wrap', '', ''),
+(75, 1, 'Turkey Sandwich', '&lt;p class=&quot;MsoNormal&quot;&gt;Whole Wheat Bread, Chipolte Dressing, Turkey, Lettuce,\r\nTomatoes, Slice Cheese&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;', '', 'Turkey Sandwich', '', ''),
+(76, 1, 'Flaming Tuna Roll', '&lt;p&gt;&lt;span style=&quot;font-size:11.0pt;line-height:107%;\r\nfont-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:\r\nCalibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;\r\nmso-bidi-font-family:&amp;quot;Times New Roman&amp;quot;;mso-bidi-theme-font:minor-bidi;\r\nmso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA&quot;&gt;Rice,\r\nVinegar, Nori, Sugar, Salt, Avocado,Spicy Tuna, Tuna Slices, Spicy Mayo,\r\nSriracha.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Flaming Tuna Roll', '', ''),
+(77, 1, 'Arabic Salad', '&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-bottom:15.0pt;line-height:normal&quot;&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: Arial, sans-serif;&quot;&gt;Arabic Chicken, Romain Mix, Red Onions, Yellow\r\nPeppers, Cucumbers, Shadon Beni Viniagrette&lt;b&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Arabic Salad', '', ''),
+(78, 1, 'Sweet Potato, Red Beans And Jerk Chicken', '&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-bottom:15.0pt;line-height:normal&quot;&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: Arial, sans-serif;&quot;&gt;Chicken\r\nBreast, Red Beans, Sweet Potato, Milk, Onion, Garlic, Green Seasoning, Jerk\r\nSeasoning, Brown Sugar, Butter, Ketchup, Olive Oil, Black Pepper, Salt&lt;b&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Sweet Potato, Red Beans And Jerk Chicken', '', ''),
+(79, 1, 'BBQ Chicken Sub', '&lt;p class=&quot;MsoNormal&quot;&gt;White Sub, Cole Slaw, BBQ Chicken, BBQ Sauce, Tomatoes,\r\nLettuce&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;', '', 'BBQ Chicken Sub', '', ''),
+(80, 1, 'Nicka K New York Blush', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:107%&quot;&gt;This radiant\r\nblush has a unique soft plush applicator puff that glides powder on smoothly\r\nfor a flawless-looking finish. Lightweight, won''t crease or cake. .17 oz.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;\r\n\r\n&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:107%&quot;&gt;The\r\nultra-fine powder delivers color seamlessly - allowing you to apply as sheer or\r\nas vibrant as desired.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Nicka K New York Blush', '', ''),
+(81, 1, 'Nicka K New York concealer', '&lt;p style=&quot;margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:\r\n12.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:\r\nminor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial&quot;&gt;Instantly\r\nconceal and cover imperfections, blemishes, and dark circles with the Nicka K\r\nNew York HD Concealer. Weightless, hydrating, yet pigment rich, the formula\r\nboasts light diffusing technology that provides coverage that diffuses\r\ndiscoloration with a second skin, soft focus finish. 15 ml/g / 0.51 fl oz&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Nicka K New York concealer', '', ''),
+(82, 1, 'Nicka K New York Crystal shine lip gloss', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Nicka K New York Lip Gloss delivers luminous color and\r\nshine in a luxurious gloss that applies smoothly and leaves lips feeling soft\r\nand supple. Enhance your pout and find the perfect complement to any skin tone\r\nwith any of our twelve vibrant shades. The sleek and compact gloss is perfect\r\nfor toting high quality lip color on the go&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Nicka K New York Crystal shine lip gloss', '', ''),
+(83, 1, 'Nicka K New York Nail Color', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:107%&quot;&gt;Nicka K New\r\nYork introduces a professional collection of nail lacquer - our Nail Colors -\r\nthe answer to every manicurist''s dreams. These quality polishes come in 44\r\non-trend variations, and are available in opaque, sheer, shimmer, bright and\r\nvampy shades. The exceptional formula will glide across your fingernails with\r\nminimal effort for vibrancy that is not only dazzling, but long lasting.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Nicka K New York Nail Color', '', ''),
+(84, 1, 'Nicka K New York Shimmer eye liner', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Ergonomic, foam tip applicator allows for precision\r\nhandling and effortlessly glides across lids. Sparkle and shine for instant\r\nglamour&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Nicka K New York Shimmer eye liner', '', ''),
+(85, 1, 'Nicka K Quad Eye Shadow', '&lt;p style=&quot;margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:\r\n12.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:\r\nminor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial&quot;&gt;Experience\r\nradiant color and exceptional wear with our new HQ Quad Eyeshadows. Available\r\nin 12 expertly designed color combinations, these shadows feature shades\r\noptimal for highlighting, contouring and defining the eyes. They boast an\r\nincredible formula that seamlessly applies and blends with buttery smooth\r\npigmentation&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Nicka K Quad Eye Shadow', '', ''),
+(86, 1, 'Nicka K New York Ultra Silk Lipstick', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Drench your lips with bold, bulletproof color. The Nicka K New York\r\nVivid Matte Lipstick delivers full coverage pigmentation and vibrancy with a\r\ntrendy modern matte finish that remains comfortable throughout wear.&amp;nbsp;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Nicka K New York Ultra Silk Lipstick', '', ''),
+(87, 1, 'Hugo Boss Sport', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;BOSS #6 SPORT by Hugo Boss for MEN EDT SPRAY 3.3 OZ Launched\r\nby the design house of Hugo Boss in 1987, BOSS #6 SPORT by Hugo Boss possesses\r\na blend of Lemon, Marigold, Mandarin, Carnation, Rose, And Musk.. It is\r\nrecommended for casual&lt;span class=&quot;apple-converted-space&quot;&gt;&amp;nbsp;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Hugo Boss Sport', '', ''),
+(88, 1, 'Calvin Klein Forbidden Euphoria', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Forbidden Euphoria by Calvin Klein designer fragrance Eau de\r\nParfum for Women 1.7 OZ Combining luxury and delicacy has made Forbidden\r\nEuphoria designer fragrance the perfect gift.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Calvin Klein Forbidden Euphoria', '', ''),
+(89, 1, 'Jimmy Choo', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Jimmy Choo Illicit is an instinctively seductive fragrance\r\nfor an audacious, confident &amp;amp; glamorous woman.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Jimmy Choo', '', ''),
+(90, 1, 'Karl Laggerfeld', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Introduced in 1990. Fragrance notes: zesty citrus and warm\r\nspice. Recommended use: casual.When&amp;nbsp;applying&amp;nbsp;any fragrance please\r\nconsider that there are several factors which can affect the natural smell of\r\nyour skin and, in turn, the way a scent smells on you.&amp;nbsp; For instance, your\r\nmood, stress level, age, body chemistry,&amp;nbsp;diet, and current medications may\r\nall alter the scents you wear.&amp;nbsp;&amp;nbsp;Similarly, factor such as dry or\r\noily&amp;nbsp;skin can even affect the amount of time a fragrance will last after\r\nbeing applied&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Karl Laggerfeld', '', ''),
+(91, 1, 'Chanel No 5  Eau De Parfum Spray 3.4 FL OZ', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;CHANEL_No.5 Eau De Parfum Spray 3.4 FL OZ&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;\r\n\r\n&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;C h a n e l S.A. is the fashion house which originates from\r\nFrance and was founded in 1910 by Gabrielle C h a n e l (affectionately called\r\n''Coco'' by friends). C h a n e l created a real revolution in the fashion world\r\nwith her simple, elegant fashions of timeless appeal. She was one of the first\r\ndesigners to introduce pants for women, and is widely credited as the creator\r\nof fashion staple &quot;the little black dress.&quot; Ms. C h a n e l\r\nmaintained creative control of the design company until her death in 1971. Karl\r\nLagerfeld took the helm as chief designer in 1983. C h a n e l created a\r\nsimilar revolution in the world of perfume with its first fragrance, the iconic\r\nC h a n e l N°5, first introduced in 1921. This fragrance continues to be a\r\nworldwide bestseller, maintaining contemporary appeal with innovative\r\nadvertising and celebrity endorsements. C h a n e l N°5 and many of the house''s\r\noldest enduring fragrances were created by Ernest Beaux. Since 1978 the\r\nin-house perfumer for C h a n e l has been Jacques Polge. Designer C h a n e l\r\nhas 54 perfumes in our fragrance base. C h a n e l is an old perfume house. The\r\nearliest edition was created in 1920 and the newest is from 2013. C h a n e l\r\nfragrances were made in collaboration with perfumers Jacques Polge, Henri\r\nRobert, Ernest Beaux and Christopher Sheldrake.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Chanel No 5  Eau De Parfum Spray 3.4 FL OZ', '', ''),
+(92, 1, 'Johnnie Walker® Black Label', '&lt;p&gt;&lt;span style=&quot;font-size:11.0pt;line-height:107%;\r\nfont-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:\r\nCalibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;\r\nmso-bidi-font-family:&amp;quot;Times New Roman&amp;quot;;mso-bidi-theme-font:minor-bidi;\r\nmso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA&quot;&gt;Johnnie\r\nWalker Black Label is a true icon, recognised as the benchmark for all other\r\ndeluxe blends. Created using only whiskies aged for a minimum of 12 years from\r\nthe four corners of Scotland, Johnnie Walker Black Label has an unmistakably\r\nsmooth, deep, complex character. An impressive whisky to share on any occasion,\r\nwhether you''re entertaining at home with friends or on a memorable night out. -\r\nSee more at: https://www.johnniewalker.com/en/our-whisky/johnnie-walker-colours/black-label/#sthash.7D6LljMv.dpuf&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Johnnie Walker® Black Label', '', ''),
+(93, 1, 'Pinehill Orange Juice', '&lt;p class=&quot;MsoNormal&quot;&gt;Whatever your fruity flavor preference, it is easy to sip\r\nand smile with PINEHILL juices.&lt;span style=&quot;font-size:12.0pt;line-height:107%&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Pinehill Orange Juice', '', ''),
+(94, 1, 'Orchard Vibe', '&lt;p&gt;&lt;span style=&quot;font-size:11.0pt;line-height:107%;\r\nfont-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:\r\nCalibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;\r\nmso-bidi-font-family:&amp;quot;Times New Roman&amp;quot;;mso-bidi-theme-font:minor-bidi;\r\nmso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA&quot;&gt;Originating\r\nright here in Trinidad and Tobago, Nestlé’s ORCHARD range of products meets the\r\nneed for good-quality juices and drinks in convenient sizes for the entire\r\nfamily. For great taste and affordable quality for every occasion, try our\r\nunmatched range of ORCHARD Juices and Drinks! 6.00&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Orchard Vibe', '', ''),
+(95, 1, 'Carib Lager', '&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:107%&quot;&gt;Since 1950,\r\nCarib has been a bona fide thirst-quencher and a symbol for everything quintessentially\r\n‘Caribbean’ – energy and warmth that are briefly tempered by a cool sea breeze.\r\nIt is a balanced, full-bodied and distinctively smooth lager that takes\r\n‘refreshing’ to another level. The revitalizing appeal of this\r\ncontinental-style brew has made it an instant and permanent favourite and the\r\nfirst choice for any occasion.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;', '', 'Carib Lager', '', ''),
+(96, 1, 'Dimple 15 year old scotch whisky', '&lt;p&gt;&lt;span style=&quot;color: rgb(153, 153, 153); font-family: Lato, arial, sans-serif; font-size: 15.84px; text-align: center;&quot;&gt;A classic deluxe blend that has stood the test of time. Based on Glenkinchie with traces of other more northerly distilleries, Dimple benefits from an extended marrying period. Rich, smooth and complex.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Dimple 15 year old scotch whisky', '', ''),
+(51, 1, 'Calvin Klein', '&lt;p&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: small;&quot;&gt;This classic scent is a harmonious blend of white flowers and creamy woods. Topnotes – freesia, mandarin, sage Midnotes – muguet, white lily, marigold, narcissus Basenotes – sandalwood, patchouli, amber&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Calvin Klein', '', ''),
+(55, 1, 'Revlon - Airbrush Effect', '&lt;p&gt;&lt;span style=&quot;color: rgb(17, 17, 17); font-family: Arial, sans-serif; font-size: 13px;&quot;&gt;The Revlon PhotoReady Airbrush Effect Makeup offers an innovative formula that features light-filtering technology to deliver a poreless, even, airbrushed complexion. The soft-focus pigments create a luminous finish with medium to full coverage. The Revlon PhotoReady Airbrush Effect Makeup has SPF 20 protection and is available in 12 shades to match many skin tones and types. With the Revlon PhotoReady Airbrush Effect Makeup, your skin has never looked so flawless!&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Revlon - Airbrush Effect', '', '');
 
 -- --------------------------------------------------------
 
@@ -2536,7 +2582,9 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (51, 45),
 (52, 26),
 (53, 34),
+(54, 20),
 (54, 27),
+(55, 18),
 (55, 46),
 (56, 25),
 (57, 57),
@@ -2555,7 +2603,53 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (70, 57),
 (71, 57),
 (72, 57),
-(73, 57);
+(73, 57),
+(74, 20),
+(74, 27),
+(75, 20),
+(75, 27),
+(76, 20),
+(76, 27),
+(77, 20),
+(77, 27),
+(78, 20),
+(78, 27),
+(79, 20),
+(79, 27),
+(80, 18),
+(80, 46),
+(81, 18),
+(81, 46),
+(82, 18),
+(82, 46),
+(83, 18),
+(83, 46),
+(84, 18),
+(84, 46),
+(85, 18),
+(85, 46),
+(86, 18),
+(86, 46),
+(87, 18),
+(87, 45),
+(88, 18),
+(88, 45),
+(89, 18),
+(89, 45),
+(90, 18),
+(90, 45),
+(91, 18),
+(91, 45),
+(92, 20),
+(92, 26),
+(93, 20),
+(93, 26),
+(94, 20),
+(94, 26),
+(95, 20),
+(95, 26),
+(96, 20),
+(96, 26);
 
 -- --------------------------------------------------------
 
@@ -2610,7 +2704,30 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (70, 0, 0),
 (71, 0, 0),
 (72, 0, 0),
-(73, 0, 0);
+(73, 0, 0),
+(74, 0, 0),
+(75, 0, 0),
+(76, 0, 0),
+(77, 0, 0),
+(78, 0, 0),
+(79, 0, 0),
+(80, 0, 0),
+(81, 0, 0),
+(82, 0, 0),
+(83, 0, 0),
+(84, 0, 0),
+(85, 0, 0),
+(86, 0, 0),
+(87, 0, 0),
+(88, 0, 0),
+(89, 0, 0),
+(90, 0, 0),
+(91, 0, 0),
+(92, 0, 0),
+(93, 0, 0),
+(94, 0, 0),
+(95, 0, 0),
+(96, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2652,7 +2769,30 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 (70, 0),
 (71, 0),
 (72, 0),
-(73, 0);
+(73, 0),
+(74, 0),
+(75, 0),
+(76, 0),
+(77, 0),
+(78, 0),
+(79, 0),
+(80, 0),
+(81, 0),
+(82, 0),
+(83, 0),
+(84, 0),
+(85, 0),
+(86, 0),
+(87, 0),
+(88, 0),
+(89, 0),
+(90, 0),
+(91, 0),
+(92, 0),
+(93, 0),
+(94, 0),
+(95, 0),
+(96, 0);
 
 -- --------------------------------------------------------
 
@@ -8789,7 +8929,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
 --
