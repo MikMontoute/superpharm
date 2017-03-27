@@ -2,7 +2,16 @@
 session_start ();
 function loginForm() {
 	echo '
+	<div class="jumbotron">
+		<a href="../">
+			<img  src="http://localhost:8080/superpharm/upload/image/catalog/download.png" title="Your Store" alt="Your Store" class="img-responsive">
+		</a>
+	<h1 style="color:#0155a4;"> Superpharm Doctor Chat </h1> 
+	</div>
     <div id="loginform">
+    			<p class="logout">
+				<a id="exit" href="../"><strong>Home</strong></a>
+			</p>
     <form action="index.php" method="post">
         <p>Please enter your name to continue:</p>
         <label for="name">Name:</label>
@@ -74,10 +83,13 @@ a:hover {
 }
 
 #loginform {
+	background-color: #0155a4;
+	color:#fff;
 	padding-top: 18px;
 }
 
 #loginform p {
+	background-color: #0155a4;
 	margin: 5px;
 }
 
@@ -111,6 +123,7 @@ a:hover {
 }
 
 .welcome {
+	color:#fff;
 	float: left;
 }
 
@@ -121,6 +134,9 @@ a:hover {
 .msgln {
 	margin: 0 0 2px 0;
 }
+#exit{
+	color:#fff;
+}
 </style>
 <title>Chat - Customer Module</title>
 </head>
@@ -130,8 +146,14 @@ a:hover {
 		loginForm ();
 	} else {
 		?>
-<div id="wrapper">
-		<div id="menu">
+		<div class="jumbotron">
+		<a href="../">
+			<img  src="http://localhost:8080/superpharm/upload/image/catalog/download.png" title="Your Store" alt="Your Store" class="img-responsive">
+		</a>
+			<h1 style="color:#0155a4;"> Superpharm Doctor Chat </h1> 
+		</div>
+<div id="wrapper" style = "background-color: #0155a4" >
+		<div style = "background-color: #0155a4" id="menu">
 			<p class="welcome">
 				Welcome, <b><?php echo $_SESSION['name']; ?></b>
 			</p>
