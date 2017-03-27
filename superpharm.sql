@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2017 at 12:26 AM
+-- Generation Time: Mar 27, 2017 at 04:37 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -405,7 +405,7 @@ CREATE TABLE `oc_category` (
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(25, '', 0, 1, 1, 3, 1, '2009-01-31 01:04:25', '2017-03-11 10:15:02'),
+(25, '', 0, 1, 1, 3, 1, '2009-01-31 01:04:25', '2017-03-26 20:58:47'),
 (27, '', 20, 0, 0, 2, 1, '2009-01-31 01:55:34', '2017-03-20 15:22:15'),
 (20, 'catalog/demo/compaq_presario.jpg', 0, 1, 1, 1, 1, '2009-01-05 21:49:43', '2017-03-11 10:16:06'),
 (18, 'catalog/demo/hp_2.jpg', 0, 1, 0, 2, 1, '2009-01-05 21:49:15', '2017-03-11 10:15:38'),
@@ -414,7 +414,8 @@ INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`,
 (34, '', 0, 1, 4, 7, 1, '2009-02-03 14:18:11', '2017-03-26 17:33:53'),
 (45, '', 18, 0, 0, 0, 1, '2010-09-24 18:29:16', '2017-03-20 15:23:17'),
 (46, '', 18, 0, 0, 0, 1, '2010-09-24 18:29:31', '2017-03-20 15:22:56'),
-(57, '', 0, 1, 1, 3, 1, '2011-04-26 08:53:16', '2017-03-11 10:16:54');
+(57, '', 0, 1, 1, 3, 1, '2011-04-26 08:53:16', '2017-03-11 10:16:54'),
+(61, '', 0, 0, 1, 8, 1, '2017-03-26 21:04:01', '2017-03-26 21:04:01');
 
 -- --------------------------------------------------------
 
@@ -447,7 +448,8 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (45, 1, 'Fragrances', '', 'Fragrances', '', ''),
 (46, 1, 'Cosmetics', '', 'Cosmetics', '', ''),
 (57, 1, 'Pet Supplies', '', 'Tablets', '', ''),
-(20, 1, 'Food  &amp; Drinks', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Desktops', 'Example of category description', '');
+(20, 1, 'Food  &amp; Drinks', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Desktops', 'Example of category description', ''),
+(61, 1, 'sfdsfsdg', '', 'rssrgfsdf', '', '');
 
 -- --------------------------------------------------------
 
@@ -492,7 +494,8 @@ INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 (46, 46, 1),
 (33, 33, 0),
 (34, 34, 0),
-(57, 57, 0);
+(57, 57, 0),
+(61, 61, 0);
 
 -- --------------------------------------------------------
 
@@ -521,7 +524,8 @@ INSERT INTO `oc_category_to_layout` (`category_id`, `store_id`, `layout_id`) VAL
 (27, 0, 0),
 (26, 0, 0),
 (46, 0, 0),
-(45, 0, 0);
+(45, 0, 0),
+(61, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -549,7 +553,8 @@ INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
 (34, 0),
 (45, 0),
 (46, 0),
-(57, 0);
+(57, 0),
+(61, 0);
 
 -- --------------------------------------------------------
 
@@ -926,7 +931,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (2, 'TT Dollars', 'TTD', '$', '', '2', 6.74930000, 1, '2017-03-26 17:28:53'),
-(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-26 23:24:55');
+(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-27 03:30:30');
 
 -- --------------------------------------------------------
 
@@ -2280,7 +2285,7 @@ CREATE TABLE `oc_product` (
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
 (54, 'Food 1', '', '', '', '', '', '', '', 10, 6, 'catalog/826a36a26bc9c3c0ac8cd897bd389e0a.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:13:50', '2017-03-26 18:23:45'),
 (55, 'Cosmetics 1', '', '', '', '', '', '', '', 15, 6, 'catalog/96961-1.jpg', 0, 1, '42.5000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:15:59', '2017-03-26 18:23:58'),
-(56, 'BabyCare 1', '', '', '', '', '', '', '', 200, 6, 'catalog/c26-B002YD8DNW-1-l.jpg', 0, 1, '79.2500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:17:19', '2017-03-26 18:23:34'),
+(56, 'BabyCare 1', '', '', '', '', '', '', '', 200, 6, 'catalog/c26-B002YD8DNW-1-l.jpg', 0, 1, '79.2500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:17:19', '2017-03-26 18:23:34'),
 (57, 'Pet 1', '', '', '', '', '', '', '', 30, 6, 'catalog/image.jpg', 0, 1, '61.4500', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:18:28', '2017-03-26 18:23:20'),
 (50, 'Health 1', '', '', '', '', '', '', '', 60, 6, 'catalog/images.jpg', 0, 1, '166.9900', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 10:57:10', '2017-03-26 18:22:01'),
 (51, 'Fragrance 1', '', '', '', '', '', '', '', 20, 6, 'catalog/16508365_10154943049861758_2395692699913067324_n.jpg', 0, 1, '600.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-03-11 11:02:00', '2017-03-26 18:22:53'),
@@ -2288,8 +2293,12 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (53, 'Stationary 1', '', '', '', '', '', '', '', 30, 6, 'catalog/51U8A21HOSL.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:12:52', '2017-03-26 18:23:07'),
 (58, 'Health 2', '', '', '', '', '', '', '', 30, 6, 'catalog/7477_160cc_EN_large.jpg', 0, 1, '84.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 17:54:49', '2017-03-26 18:15:52'),
 (59, 'Health 3', '', '', '', '', '', '', '', 20, 6, 'catalog/787002_EN_large.jpg', 0, 1, '115.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:00:31', '2017-03-26 18:01:14'),
-(60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 18:22:00'),
-(61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 18:18:15');
+(60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 21:30:54'),
+(61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 21:30:36'),
+(62, 'BabyCare 2', '', '', '', '', '', '', '', 50, 6, 'catalog/baby_oil.jpg', 0, 1, '67.7200', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 20:33:56', '2017-03-26 21:28:37'),
+(63, 'BabyCare 3', '', '', '', '', '', '', '', 65, 6, 'catalog/baby_wipes.JPG', 0, 1, '16.0700', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 20:57:16', '2017-03-26 21:28:12'),
+(64, 'BabyCare 4', '', '', '', '', '', '', '', 30, 6, 'catalog/vaseline.JPG', 0, 1, '28.2700', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:20:53', '2017-03-26 21:29:56'),
+(65, 'BabyCare 5', '', '', '', '', '', '', '', 50, 6, 'catalog/baby_shampoo.jpg', 0, 1, '33.3500', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:27:39', '2017-03-26 21:29:35');
 
 -- --------------------------------------------------------
 
@@ -2339,7 +2348,11 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (59, 1, 'Jamieson Omega 3-6-9', '&lt;h1 itemprop=&quot;name&quot; style=&quot;margin-bottom: 0.5em; line-height: 1.4;&quot;&gt;&lt;p style=&quot;margin-bottom: 15px;&quot;&gt;Jamieson Omega 3-6-9 is a complete source of omega-3, 6 and 9 essential fatty acids. Derived from fresh, pure cold-pressed oils of organic flax, borage and sustainably sourced fish, it helps to support heart health and &amp;nbsp;maintain healthy cognitive function.&lt;/p&gt;&lt;/h1&gt;&lt;h3 style=&quot;margin: 0em 0px 0.5em; line-height: 1.4;&quot;&gt;&lt;br&gt;&lt;/h3&gt;', '', 'Jamieson Omega 3-6-9', '', ''),
 (60, 1, 'GNC Burn 60™ ', '&lt;p&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 14px;&quot;&gt;GNC Burn 60™ is a clinically proven thermogenic formula that helps to enhance metabolism, burn calories and boost energy levels. With its powerful ingredients, Burn 60 enhances cellular metabolic activity. For best results, use the healthy diet and exercise program included with Burn 60.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'GNC Burn 60', '', ''),
 (61, 1, 'Vyzetra Ultra’s', '&lt;p&gt;&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;Droid Sans&amp;quot;, Helvetica, Arial, Lucida, sans-serif; font-size: 14px;&quot;&gt;Vyzetra Ultra’s formulation is delivered exclusively in a capsule that retains the structural integrity of the original ingredient. Vyzetra Ultracontains a blend of additional ingredients integral in support of a healthy 21st century lifestyle. Co Q10 supports subcellular energy metabolism and is needed by an aging population. Alpha lipoic acid contains the biologically active R-Lipoic Acid that is naturally synthesized by humans as a cofactor for several mitochondrial enzymatic proteins. Choline is an essential nutrient needed by humans to support cell signaling, nerve impulse transmission, and fatty acid metabolism. L-Glutathione is the body’s premier antioxidant and is a product by its cells to prevent oxidative stress and promote cell function. Inositol is an important molecule in natural signal transduction and is required by fatty acid precursor molecules.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Vyzetra Ultra’s', '', ''),
-(50, 1, 'Centrum', '&lt;ul style=&quot;margin: 13px 0px; padding: 0px 0px 0px 4px; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; height: auto; color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;li style=&quot;margin: 0px 0px 13px 13px; padding: 0px; list-style: disc outside none; background: none; border: 0px;&quot;&gt;Specially formulated with an active combination of 23 vitamins, minerals and herbs. Contains ginseng to support physical endurance and higher levels of B vitamins to unlock energy from food The world’s no.1 multivitamin&lt;span style=&quot;background-color: initial; vertical-align: top; font-size: 8.52px; font-family: arial; position: relative; top: -3px;&quot;&gt;*&amp;nbsp;&lt;/span&gt;Backed by 30 years of nutritional expertise and proven science&lt;/li&gt;&lt;/ul&gt;', '', 'Centrum', '', 'health');
+(50, 1, 'Centrum', '&lt;ul style=&quot;margin: 13px 0px; padding: 0px 0px 0px 4px; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; height: auto; color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;li style=&quot;margin: 0px 0px 13px 13px; padding: 0px; list-style: disc outside none; background: none; border: 0px;&quot;&gt;Specially formulated with an active combination of 23 vitamins, minerals and herbs. Contains ginseng to support physical endurance and higher levels of B vitamins to unlock energy from food The world’s no.1 multivitamin&lt;span style=&quot;background-color: initial; vertical-align: top; font-size: 8.52px; font-family: arial; position: relative; top: -3px;&quot;&gt;*&amp;nbsp;&lt;/span&gt;Backed by 30 years of nutritional expertise and proven science&lt;/li&gt;&lt;/ul&gt;', '', 'Centrum', '', 'health'),
+(62, 1, 'Johnson''s Baby Oil', '&lt;p&gt;Locks in up to 10 times more moisture for baby-soft skin.*&lt;/p&gt;&lt;p&gt;&lt;b&gt;For baby:&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Moisturizes baby’s delicate skin and helps protect from dryness&lt;br&gt;&lt;/p&gt;&lt;p&gt;Pure mineral oil forms a silky barrier to help prevent excess moisture loss&lt;/p&gt;&lt;p&gt;Great for baby massage and parent-baby bonding&lt;/p&gt;&lt;p&gt;Clinically proven mild and gentle formula for your baby’s skin&lt;/p&gt;&lt;p&gt;Dermatologist- and allergy-tested&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;For you:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Locks in up to 10 times more moisture on wet skin than an ordinary lotion can on dry skin&lt;br&gt;&lt;/p&gt;&lt;p&gt;Use to soothe and relieve dry, rough patches&lt;/p&gt;&lt;p&gt;Leaves skin glowing and baby soft&lt;/p&gt;&lt;p&gt;It’s a silky-soft moisturizer for silky-soft baby skin&lt;/p&gt;', '', 'Johnson''s Baby Oil', '', ''),
+(63, 1, 'Pampers Baby Wipes', '&lt;p&gt;Make changing time clean time with Pampers Baby Fresh wipes with Softgrip Texture. Baby Fresh wipes are 2X stronger than Huggies Natural Care wipes. Plus, they are hypoallergenic and have a refreshing scent and lotion with pure water in every wipe. During changing time, your baby will love the refreshing clean of Pampers Baby Fresh wipes.&lt;/p&gt;&lt;p&gt;Benefits&lt;/p&gt;&lt;p&gt;• Hypoallergenic&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Refreshing scent&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• 2X stronger than Huggies Natural Care® wipes&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Made with lotion and pure water&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Unique Softgrip Texture®&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Earn Pampers RewardsTM points with every Pampers purchase&lt;/p&gt;', '', 'Baby Wipes', '', ''),
+(65, 1, 'Johnson''s Baby Shampoo', '&lt;p&gt;As gentle to the eyes as pure water.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Leaves your baby’s hair smelling fresh and looking shiny&lt;/p&gt;&lt;p&gt;NO MORE TEARS® formula is gentle for newborns&lt;/p&gt;&lt;p&gt;Soap-free and clinically proven hypoallergenic&lt;/p&gt;&lt;p&gt;Dermatologist-tested&lt;/p&gt;&lt;p&gt;Paraben-free&lt;/p&gt;&lt;p&gt;Baby’s delicate eyes need special care during bathtime. &amp;nbsp;JOHNSON’S® baby shampoo is as gentle and mild to the eyes as pure water. &amp;nbsp;This baby shampoo’s NO MORE TEARS® formula cleanses gently and rinses easily, leaving your baby’s hair soft, shiny, manageable and clean while smelling baby-fresh.&lt;/p&gt;', '', 'Baby Shampoo', '', ''),
+(64, 1, 'Vaseline Pure Petroleum Jelly Original', '&lt;p&gt;Vaseline Jelly is the original skin protectant - it has been used to protect and help heal dry skin since 1870, and to this day, it effectively cares for your skin. Vaseline Petroleum Jelly Original is triple-purified and hypoallergenic, and is the ideal product for a multitude of uses, including a moisturizer for sensitive skin. Hypoallergenic Moisturizer. Vaseline Petroleum Jelly Original is a product you can trust. Its triple-purification seal guarantees each jar of Vaseline Jelly has been purified not once, but three times to remove impurities. It is dermatologist recommended and has been given the U.S. National Eczema Association Seal of Acceptance as appropriate for use by those with eczema and people with sensitive skin. Vaseline Petroleum Jelly Original is also a fragrance free, hypoallergenic moisturizer that is non-irritating and non-comedogenic (it won''t clog your pores). Vaseline Jelly Uses: Original Vaseline Jelly has many uses, including personal care.&lt;br&gt;&lt;/p&gt;', '', 'Vaseline Pure Petroleum Jelly Original', '', '');
 
 -- --------------------------------------------------------
 
@@ -2507,7 +2520,11 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (58, 33),
 (59, 33),
 (60, 33),
-(61, 33);
+(61, 33),
+(62, 25),
+(63, 25),
+(64, 25),
+(65, 25);
 
 -- --------------------------------------------------------
 
@@ -2550,7 +2567,11 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (58, 0, 0),
 (59, 0, 0),
 (60, 0, 0),
-(61, 0, 0);
+(61, 0, 0),
+(62, 0, 0),
+(63, 0, 0),
+(64, 0, 0),
+(65, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2580,7 +2601,11 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 (58, 0),
 (59, 0),
 (60, 0),
-(61, 0);
+(61, 0),
+(62, 0),
+(63, 0),
+(64, 0),
+(65, 0);
 
 -- --------------------------------------------------------
 
@@ -3146,7 +3171,7 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (848, 'category_id=18', 'laptop-notebook'),
 (856, 'category_id=46', 'macs'),
 (857, 'category_id=45', 'windows'),
-(846, 'category_id=25', 'component'),
+(864, 'category_id=25', 'component'),
 (851, 'category_id=57', 'tablet'),
 (862, 'category_id=33', 'healthcare'),
 (828, 'manufacturer_id=9', 'canon'),
@@ -8482,7 +8507,7 @@ ALTER TABLE `oc_cart`
 -- AUTO_INCREMENT for table `oc_category`
 --
 ALTER TABLE `oc_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 --
 -- AUTO_INCREMENT for table `oc_country`
 --
@@ -8717,7 +8742,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
 --
@@ -8832,7 +8857,7 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=863;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=865;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --
