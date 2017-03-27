@@ -3,11 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
-<<<<<<< HEAD
--- Generation Time: Mar 27, 2017 at 03:45 AM
-=======
--- Generation Time: Mar 27, 2017 at 04:37 AM
->>>>>>> 632cf981fcd0c5470e3e78dc82e92ec318a6e893
+-- Generation Time: Mar 27, 2017 at 04:53 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -935,11 +931,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (2, 'TT Dollars', 'TTD', '$', '', '2', 6.74930000, 1, '2017-03-26 17:28:53'),
-<<<<<<< HEAD
-(4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-27 03:08:55');
-=======
 (4, 'US Dollars', 'USD', '$', '', '2', 1.00000000, 1, '2017-03-27 03:30:30');
->>>>>>> 632cf981fcd0c5470e3e78dc82e92ec318a6e893
 
 -- --------------------------------------------------------
 
@@ -2301,21 +2293,20 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (53, 'Stationary 1', '', '', '', '', '', '', '', 30, 6, 'catalog/51U8A21HOSL.jpg', 0, 1, '35.0000', 0, 0, '2017-03-11', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-11 11:12:52', '2017-03-26 18:23:07'),
 (58, 'Health 2', '', '', '', '', '', '', '', 30, 6, 'catalog/7477_160cc_EN_large.jpg', 0, 1, '84.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 17:54:49', '2017-03-26 18:15:52'),
 (59, 'Health 3', '', '', '', '', '', '', '', 20, 6, 'catalog/787002_EN_large.jpg', 0, 1, '115.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:00:31', '2017-03-26 18:01:14'),
-<<<<<<< HEAD
-(60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 21:19:22'),
-(61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 21:21:03'),
-(62, 'Stationary 2', '', '', '', '', '', '', '', 70, 6, 'catalog/0dick_1614.jpg', 0, 1, '48.4000', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:26:00', '2017-03-26 21:26:33'),
-(63, 'Stationary 3', '', '', '', '', '', '', '', 30, 6, 'catalog/0.jpg', 0, 1, '96.0000', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:28:36', '2017-03-26 21:29:04'),
-(64, 'Stationary 4', '', '', '', '', '', '', '', 70, 6, 'catalog/17002.jpg', 0, 1, '13.4300', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:31:57', '0000-00-00 00:00:00'),
-(65, 'Stationary 5', '', '', '', '', '', '', '', 15, 6, 'catalog/0dick_0397.jpg', 0, 1, '41.3600', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:35:24', '0000-00-00 00:00:00');
-=======
 (60, 'Health 4', '', '', '', '', '', '', '', 10, 6, 'catalog/pGNC1-3644281dt.jpg', 0, 1, '190.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:06:01', '2017-03-26 21:30:54'),
 (61, 'Health 5', '', '', '', '', '', '', '', 10, 6, 'catalog/0ultranew.jpg', 0, 1, '259.9900', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 18:10:55', '2017-03-26 21:30:36'),
 (62, 'BabyCare 2', '', '', '', '', '', '', '', 50, 6, 'catalog/baby_oil.jpg', 0, 1, '67.7200', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 20:33:56', '2017-03-26 21:28:37'),
 (63, 'BabyCare 3', '', '', '', '', '', '', '', 65, 6, 'catalog/baby_wipes.JPG', 0, 1, '16.0700', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 20:57:16', '2017-03-26 21:28:12'),
 (64, 'BabyCare 4', '', '', '', '', '', '', '', 30, 6, 'catalog/vaseline.JPG', 0, 1, '28.2700', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:20:53', '2017-03-26 21:29:56'),
-(65, 'BabyCare 5', '', '', '', '', '', '', '', 50, 6, 'catalog/baby_shampoo.jpg', 0, 1, '33.3500', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:27:39', '2017-03-26 21:29:35');
->>>>>>> 632cf981fcd0c5470e3e78dc82e92ec318a6e893
+(65, 'BabyCare 5', '', '', '', '', '', '', '', 50, 6, 'catalog/baby_shampoo.jpg', 0, 1, '33.3500', 0, 0, '2017-03-26', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 21:27:39', '2017-03-26 21:29:35'),
+(66, 'Stationary 2', '', '', '', '', '', '', '', 20, 6, 'catalog/0.jpg', 0, 1, '96.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:16:51', '0000-00-00 00:00:00'),
+(67, 'Stationary 3', '', '', '', '', '', '', '', 14, 6, 'catalog/0dick_0397.jpg', 0, 1, '41.3600', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:18:03', '0000-00-00 00:00:00'),
+(68, 'Stationary 4', '', '', '', '', '', '', '', 25, 6, 'catalog/0dick_1614.jpg', 0, 1, '48.4000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:19:56', '0000-00-00 00:00:00'),
+(69, 'Stationary 5', '', '', '', '', '', '', '', 40, 6, 'catalog/17002.jpg', 0, 1, '13.4300', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:22:36', '0000-00-00 00:00:00'),
+(70, 'Pet 2', '', '', '', '', '', '', '', 10, 6, 'catalog/1221026.jpg', 0, 1, '23.7500', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:31:28', '2017-03-26 22:31:54'),
+(71, 'Pet 3', '', '', '', '', '', '', '', 10, 6, 'catalog/5-Retractable-dog-leash-BS-425mk072411.jpg', 0, 1, '65.4800', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:33:16', '0000-00-00 00:00:00'),
+(72, 'Pet 4', '', '', '', '', '', '', '', 20, 6, 'catalog/1dentastix.jpg', 0, 1, '71.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:36:54', '0000-00-00 00:00:00'),
+(73, 'Pet 5', '', '', '', '', '', '', '', 20, 6, 'catalog/1IAM-Cat-Treats-.jpg', 0, 1, '68.0000', 0, 0, '2017-03-27', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-03-26 22:39:42', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -2366,17 +2357,18 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (60, 1, 'GNC Burn 60™ ', '&lt;p&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 14px;&quot;&gt;GNC Burn 60™ is a clinically proven thermogenic formula that helps to enhance metabolism, burn calories and boost energy levels. With its powerful ingredients, Burn 60 enhances cellular metabolic activity. For best results, use the healthy diet and exercise program included with Burn 60.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'GNC Burn 60', '', ''),
 (61, 1, 'Vyzetra Ultra’s', '&lt;p&gt;&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;Droid Sans&amp;quot;, Helvetica, Arial, Lucida, sans-serif; font-size: 14px;&quot;&gt;Vyzetra Ultra’s formulation is delivered exclusively in a capsule that retains the structural integrity of the original ingredient. Vyzetra Ultracontains a blend of additional ingredients integral in support of a healthy 21st century lifestyle. Co Q10 supports subcellular energy metabolism and is needed by an aging population. Alpha lipoic acid contains the biologically active R-Lipoic Acid that is naturally synthesized by humans as a cofactor for several mitochondrial enzymatic proteins. Choline is an essential nutrient needed by humans to support cell signaling, nerve impulse transmission, and fatty acid metabolism. L-Glutathione is the body’s premier antioxidant and is a product by its cells to prevent oxidative stress and promote cell function. Inositol is an important molecule in natural signal transduction and is required by fatty acid precursor molecules.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Vyzetra Ultra’s', '', ''),
 (50, 1, 'Centrum', '&lt;ul style=&quot;margin: 13px 0px; padding: 0px 0px 0px 4px; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; height: auto; color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;li style=&quot;margin: 0px 0px 13px 13px; padding: 0px; list-style: disc outside none; background: none; border: 0px;&quot;&gt;Specially formulated with an active combination of 23 vitamins, minerals and herbs. Contains ginseng to support physical endurance and higher levels of B vitamins to unlock energy from food The world’s no.1 multivitamin&lt;span style=&quot;background-color: initial; vertical-align: top; font-size: 8.52px; font-family: arial; position: relative; top: -3px;&quot;&gt;*&amp;nbsp;&lt;/span&gt;Backed by 30 years of nutritional expertise and proven science&lt;/li&gt;&lt;/ul&gt;', '', 'Centrum', '', 'health'),
-<<<<<<< HEAD
-(62, 1, 'Note Book', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl03_BrandLabel&quot; class=&quot;orange&quot;&gt;Mead Zwipes&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl03_DescriptionLabel&quot; class=&quot;orange&quot;&gt;College Ruled Perf. w/ marker, clip, dividers and flap Red/ Green/ Blue - 9 1/2&quot; x 6&quot; - 90lvs&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Note Book', '', ''),
-(63, 1, 'Scientific Calculator ', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl08_BrandLabel&quot; class=&quot;orange&quot;&gt;Canon&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl08_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Scientific Calculator 10+2 digits with 38 built-in formulas&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Scientific Calculator ', '', ''),
-(64, 1, 'Command Hook', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl04_BrandLabel&quot; class=&quot;orange&quot;&gt;3M&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl04_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Small Command Hook - 2/pk&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Command Hook', '', ''),
-(65, 1, 'Crayola Oil Pastels', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl00_BrandLabel&quot; class=&quot;orange&quot;&gt;Crayola&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl00_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Oil Pastels - hexagonal in lift lid box - 28''s&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Crayola Oil Pastels', '', '');
-=======
 (62, 1, 'Johnson''s Baby Oil', '&lt;p&gt;Locks in up to 10 times more moisture for baby-soft skin.*&lt;/p&gt;&lt;p&gt;&lt;b&gt;For baby:&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Moisturizes baby’s delicate skin and helps protect from dryness&lt;br&gt;&lt;/p&gt;&lt;p&gt;Pure mineral oil forms a silky barrier to help prevent excess moisture loss&lt;/p&gt;&lt;p&gt;Great for baby massage and parent-baby bonding&lt;/p&gt;&lt;p&gt;Clinically proven mild and gentle formula for your baby’s skin&lt;/p&gt;&lt;p&gt;Dermatologist- and allergy-tested&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;For you:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Locks in up to 10 times more moisture on wet skin than an ordinary lotion can on dry skin&lt;br&gt;&lt;/p&gt;&lt;p&gt;Use to soothe and relieve dry, rough patches&lt;/p&gt;&lt;p&gt;Leaves skin glowing and baby soft&lt;/p&gt;&lt;p&gt;It’s a silky-soft moisturizer for silky-soft baby skin&lt;/p&gt;', '', 'Johnson''s Baby Oil', '', ''),
 (63, 1, 'Pampers Baby Wipes', '&lt;p&gt;Make changing time clean time with Pampers Baby Fresh wipes with Softgrip Texture. Baby Fresh wipes are 2X stronger than Huggies Natural Care wipes. Plus, they are hypoallergenic and have a refreshing scent and lotion with pure water in every wipe. During changing time, your baby will love the refreshing clean of Pampers Baby Fresh wipes.&lt;/p&gt;&lt;p&gt;Benefits&lt;/p&gt;&lt;p&gt;• Hypoallergenic&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Refreshing scent&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• 2X stronger than Huggies Natural Care® wipes&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Made with lotion and pure water&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Unique Softgrip Texture®&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;• Earn Pampers RewardsTM points with every Pampers purchase&lt;/p&gt;', '', 'Baby Wipes', '', ''),
 (65, 1, 'Johnson''s Baby Shampoo', '&lt;p&gt;As gentle to the eyes as pure water.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Leaves your baby’s hair smelling fresh and looking shiny&lt;/p&gt;&lt;p&gt;NO MORE TEARS® formula is gentle for newborns&lt;/p&gt;&lt;p&gt;Soap-free and clinically proven hypoallergenic&lt;/p&gt;&lt;p&gt;Dermatologist-tested&lt;/p&gt;&lt;p&gt;Paraben-free&lt;/p&gt;&lt;p&gt;Baby’s delicate eyes need special care during bathtime. &amp;nbsp;JOHNSON’S® baby shampoo is as gentle and mild to the eyes as pure water. &amp;nbsp;This baby shampoo’s NO MORE TEARS® formula cleanses gently and rinses easily, leaving your baby’s hair soft, shiny, manageable and clean while smelling baby-fresh.&lt;/p&gt;', '', 'Baby Shampoo', '', ''),
-(64, 1, 'Vaseline Pure Petroleum Jelly Original', '&lt;p&gt;Vaseline Jelly is the original skin protectant - it has been used to protect and help heal dry skin since 1870, and to this day, it effectively cares for your skin. Vaseline Petroleum Jelly Original is triple-purified and hypoallergenic, and is the ideal product for a multitude of uses, including a moisturizer for sensitive skin. Hypoallergenic Moisturizer. Vaseline Petroleum Jelly Original is a product you can trust. Its triple-purification seal guarantees each jar of Vaseline Jelly has been purified not once, but three times to remove impurities. It is dermatologist recommended and has been given the U.S. National Eczema Association Seal of Acceptance as appropriate for use by those with eczema and people with sensitive skin. Vaseline Petroleum Jelly Original is also a fragrance free, hypoallergenic moisturizer that is non-irritating and non-comedogenic (it won''t clog your pores). Vaseline Jelly Uses: Original Vaseline Jelly has many uses, including personal care.&lt;br&gt;&lt;/p&gt;', '', 'Vaseline Pure Petroleum Jelly Original', '', '');
->>>>>>> 632cf981fcd0c5470e3e78dc82e92ec318a6e893
+(64, 1, 'Vaseline Pure Petroleum Jelly Original', '&lt;p&gt;Vaseline Jelly is the original skin protectant - it has been used to protect and help heal dry skin since 1870, and to this day, it effectively cares for your skin. Vaseline Petroleum Jelly Original is triple-purified and hypoallergenic, and is the ideal product for a multitude of uses, including a moisturizer for sensitive skin. Hypoallergenic Moisturizer. Vaseline Petroleum Jelly Original is a product you can trust. Its triple-purification seal guarantees each jar of Vaseline Jelly has been purified not once, but three times to remove impurities. It is dermatologist recommended and has been given the U.S. National Eczema Association Seal of Acceptance as appropriate for use by those with eczema and people with sensitive skin. Vaseline Petroleum Jelly Original is also a fragrance free, hypoallergenic moisturizer that is non-irritating and non-comedogenic (it won''t clog your pores). Vaseline Jelly Uses: Original Vaseline Jelly has many uses, including personal care.&lt;br&gt;&lt;/p&gt;', '', 'Vaseline Pure Petroleum Jelly Original', '', ''),
+(66, 1, 'Canon Scientific Calculator', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl08_BrandLabel&quot; class=&quot;orange&quot;&gt;Canon&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl08_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Scientific Calculator 10+2 digits with 38 built-in formulas&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Canon Scientific Calculator', '', ''),
+(67, 1, 'Crayola Oil Pastels', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl00_BrandLabel&quot; class=&quot;orange&quot;&gt;Crayola&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl00_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Oil Pastels - hexagonal in lift lid box - 28''s&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Crayola Oil Pastels', '', ''),
+(68, 1, 'Mead Zwipes notebook', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl03_BrandLabel&quot; class=&quot;orange&quot;&gt;Mead Zwipes&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl03_DescriptionLabel&quot; class=&quot;orange&quot;&gt;College Ruled Perf. w/ marker, clip, dividers and flap Red/ Green/ Blue - 9 1/2&quot; x 6&quot; - 90lvs&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Notebook', '', ''),
+(69, 1, '3M Small Command Hook ', '&lt;p&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl04_BrandLabel&quot; class=&quot;orange&quot;&gt;3M&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;ctl00_ContentPlaceHolder1_DataList1_ctl04_DescriptionLabel&quot; class=&quot;orange&quot;&gt;Small Command Hook - 2/pk&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Command Hook', '', ''),
+(70, 1, 'Friskies Cat food', '&lt;p&gt;Friskies Cat food - Mix Grill&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Cat food', '', ''),
+(71, 1, 'Dog Leash', '&lt;p&gt;Red and Black, Retractable dog leash&lt;/p&gt;', '', 'Dog Leash', '', ''),
+(72, 1, 'Dentastix', '&lt;p&gt;Dentastix are a safe way for clean teeth and gums for your pet dog&lt;/p&gt;', '', 'Dentastix', '', ''),
+(73, 1, 'IAMS cat treats', '&lt;p&gt;IAMS cat treats with chicken&lt;/p&gt;', '', 'IAMS cat food', '', '');
 
 -- --------------------------------------------------------
 
@@ -2545,17 +2537,18 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (59, 33),
 (60, 33),
 (61, 33),
-<<<<<<< HEAD
-(62, 34),
-(63, 34),
-(64, 34),
-(65, 34);
-=======
 (62, 25),
 (63, 25),
 (64, 25),
-(65, 25);
->>>>>>> 632cf981fcd0c5470e3e78dc82e92ec318a6e893
+(65, 25),
+(66, 34),
+(67, 34),
+(68, 34),
+(69, 34),
+(70, 57),
+(71, 57),
+(72, 57),
+(73, 57);
 
 -- --------------------------------------------------------
 
@@ -2602,7 +2595,15 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (62, 0, 0),
 (63, 0, 0),
 (64, 0, 0),
-(65, 0, 0);
+(65, 0, 0),
+(66, 0, 0),
+(67, 0, 0),
+(68, 0, 0),
+(69, 0, 0),
+(70, 0, 0),
+(71, 0, 0),
+(72, 0, 0),
+(73, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2636,7 +2637,15 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 (62, 0),
 (63, 0),
 (64, 0),
-(65, 0);
+(65, 0),
+(66, 0),
+(67, 0),
+(68, 0),
+(69, 0),
+(70, 0),
+(71, 0),
+(72, 0),
+(73, 0);
 
 -- --------------------------------------------------------
 
@@ -8773,7 +8782,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
 --
