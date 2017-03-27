@@ -33,7 +33,7 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #23a1d1;
+	color: #0155a4;
 }
 a:hover {
 	text-decoration: none;
@@ -63,6 +63,12 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 
 .nav-tabs {
 	margin-bottom: 15px;
+}
+.nav li a {
+	color:#fff;
+}
+.nav li .dropdown-menu a {
+	color:#888;
 }
 div.required .control-label:before {
 	content: '* ';
@@ -337,11 +343,16 @@ footer h5 {
 /* breadcrumb */
 .breadcrumb {
 	margin: 0 0 20px 0;
+	background-color: #0155a4;
 	padding: 8px 0;
 	border: 1px solid #ddd;
 }
+.breadcrumb a{
+	color:#fff;
+}
 .breadcrumb i {
 	font-size: 15px;
+	color: #fff;
 }
 .breadcrumb > li {
 	text-shadow: 0 1px 0 #FFF;
@@ -625,8 +636,8 @@ h2.price {
 	border: none;
 	display: inline-block;
 	float: left;
-	background-color: #eee;
-	color: #888;
+	background-color: #0155a4;
+	color: #fff;
 	line-height: 38px;
 	font-weight: bold;
 	text-align: center;
